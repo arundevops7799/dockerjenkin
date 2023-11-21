@@ -5,7 +5,7 @@ MAINTAINER Hari harichowdary.java@gmail.com
 
 
 WORKDIR /usr/local/tomcat
-
+RUN mvn package
 COPY ./java-tomcat-maven-example.war /usr/local/tomcat/webapps
 
 EXPOSE 8080
